@@ -107,7 +107,6 @@
  *	   	erfc/erf(NaN) is NaN
  */
 
-#include <float.h>
 #include <openlibm_math.h>
 
 #include "math_private.h"
@@ -300,8 +299,3 @@ erfc(double x)
 	    if(hx>0) return tiny*tiny; else return two-tiny;
 	}
 }
-
-#if (LDBL_MANT_DIG == 53)
-openlibm_weak_reference(erf, erfl);
-openlibm_weak_reference(erfc, erfcl);
-#endif

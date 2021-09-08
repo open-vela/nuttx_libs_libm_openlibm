@@ -38,7 +38,6 @@
  * acknowledged.
  */
 
-#include <float.h>
 #include <openlibm_math.h>
 
 #include "mathimpl.h"
@@ -313,7 +312,3 @@ neg_gam(x)
 	if (sgn < 0) y = -y;
 	return (M_PI / (y*z));
 }
-
-#if (LDBL_MANT_DIG == 53)
-openlibm_weak_reference(tgamma, tgammal);
-#endif
