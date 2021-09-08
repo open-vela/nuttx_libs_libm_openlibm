@@ -57,7 +57,6 @@
  * to produce the hexadecimal values shown.
  */
 
-#include <float.h>
 #include <openlibm_math.h>
 
 #include "math_private.h"
@@ -311,7 +310,3 @@ __ieee754_pow(double x, double y)
 	else SET_HIGH_WORD(z,j);
 	return s*z;
 }
-
-#if (LDBL_MANT_DIG == 53)
-openlibm_weak_reference(pow, powl);
-#endif

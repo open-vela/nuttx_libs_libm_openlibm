@@ -33,7 +33,6 @@
  *
  */
 
-#include <float.h>
 #include <openlibm_math.h>
 
 #include "math_private.h"
@@ -62,7 +61,3 @@ __ieee754_atanh(double x)
 	    t = 0.5*log1p((x+x)/(one-x));
 	if(hx>=0) return t; else return -t;
 }
-
-#if (LDBL_MANT_DIG == 53)
-openlibm_weak_reference(atanh, atanhl);
-#endif

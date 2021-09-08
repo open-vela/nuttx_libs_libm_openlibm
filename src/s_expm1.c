@@ -215,7 +215,3 @@ expm1(double x)
 	}
 	return y;
 }
-
-#if (LDBL_MANT_DIG == 53)
-openlibm_weak_reference(expm1, expm1l);
-#endif
