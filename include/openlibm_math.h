@@ -149,8 +149,8 @@ extern const union __nan_un {
     : __signbitl(x))
 
 //VBS
-//typedef	__double_t	double_t;
-//typedef	__float_t	float_t;
+typedef float  float_t;
+typedef double double_t;
 #endif /* __ISO_C_VISIBLE >= 1999 */
 
 /*
