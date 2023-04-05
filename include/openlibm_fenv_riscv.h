@@ -39,14 +39,13 @@
 #define	_FENV_H_
 
 #include <stdint.h>
-#include "cdefs-compat.h"
 
 #ifndef	__fenv_static
 #define	__fenv_static	static
 #endif
 
-typedef	__uint64_t	fenv_t;
-typedef	__uint64_t	fexcept_t;
+typedef	uint64_t	fenv_t;
+typedef	uint64_t	fexcept_t;
 
 /* Exception flags */
 #define	FE_INVALID	0x0010
@@ -68,7 +67,9 @@ typedef	__uint64_t	fexcept_t;
 #define	_ROUND_MASK	(FE_TONEAREST | FE_DOWNWARD | \
 			 FE_UPWARD | FE_TOWARDZERO)
 
-__BEGIN_DECLS
+#if defined(__cplusplus)
+extern "C" {
+#endif
 
 /* Default floating-point environment */
 extern const fenv_t	__fe_dfl_env;
@@ -256,6 +257,8 @@ fegetexcept(void)
 
 #endif /* __BSD_VISIBLE */
 
-__END_DECLS
+#if defined(__cplusplus)
+}
+#endif
 
 #endif	/* !_FENV_H_ */
