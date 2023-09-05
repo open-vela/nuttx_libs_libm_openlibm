@@ -11,8 +11,7 @@
 #include "math_private.h"
 
 OLM_DLLEXPORT float
-cabsf(z)
-	float complex z;
+cabsf(float complex z)
 {
 
 	return hypotf(crealf(z), cimagf(z));
