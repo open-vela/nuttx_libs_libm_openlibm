@@ -153,6 +153,10 @@ typedef float  float_t;
 typedef double double_t;
 #endif /* __ISO_C_VISIBLE >= 1999 */
 
+#ifndef __BSD_VISIBLE
+#define __BSD_VISIBLE 1
+#endif
+
 /*
  * XOPEN/SVID
  */
