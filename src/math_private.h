@@ -293,6 +293,7 @@ irint(double x)
 #define	__ieee754_asin	asin
 #define	__ieee754_atan2	atan2
 #define	__ieee754_exp	exp
+#define	__ieee754_exp10	exp10
 #define	__ieee754_cosh	cosh
 #define	__ieee754_fmod	fmod
 #define	__ieee754_pow	pow
@@ -316,6 +317,7 @@ irint(double x)
 #define	__ieee754_asinf	asinf
 #define	__ieee754_atan2f atan2f
 #define	__ieee754_expf	expf
+#define	__ieee754_exp10f	exp10f
 #define	__ieee754_coshf	coshf
 #define	__ieee754_fmodf	fmodf
 #define	__ieee754_powf	powf
