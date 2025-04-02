@@ -31,6 +31,7 @@
 
 #include <stdint.h>
 #include <openlibm_defs.h>
+#include <openlibm_math.h>
 
 #ifndef	__fenv_static
 #define	__fenv_static	static
